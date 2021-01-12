@@ -1,0 +1,104 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: #333 url('restaurant.webp') center center no-repeat;
+    background-size: cover;
+    color: #532827;
+    font-family: 'helvetica',sans-serif;
+    font-size: 16px;
+}
+#container{
+    width:fit-content;
+    margin: 40px auto;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #eee; /*url('') top left repeat*/
+    box-shadow: 0 10px 10px -7px #555;
+    border-radius: 5px;
+    text-align: center;
+}
+h1{
+    margin: 0  0 20px;
+    padding: 0 0 20px;
+    border-bottom: solid 1px #ddd;
+}
+form{
+    text-align: left;
+    width:auto;
+}
+form label{
+    display: block;
+    margin: 25px 0;
+    font-weight: bold;
+    width:auto;
+}
+form input,form select{
+    padding: 8px;
+    margin: 10px 0;
+    font-weight: bold;
+    width: 100%;
+}
+form input[type="text"]{
+    width:100%;
+}
+button{
+    background: #6c2727;
+    color: #fff;
+    border: none;
+    border-bottom: solid 4px #222;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: auto;
+    padding: 20px 30px;
+}
+button:hover{
+    background: #4c2827;
+    border-bottom-color: #111;
+    cursor: pointer;    
+}
+button:active{
+    position: relative;
+    top:1.5px;
+}
+#totalTip{
+    font-size: 50px;
+    margin-top: 40px;
+}
+#totalTip:before{
+    content: "Tip per Person";
+    font-size: 14px;
+    font-weight: bold;
+    display: block;    
+    text-transform: uppercase;
+}
+#totalTip sup{
+    font-size: 24px;
+    top:-18px;
+/*    SUP DOESNT REQUIRE POSITOON*/
+}
+#totalTip small{
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+}
+#totalAmountperPerson{
+    font-size: 50px;
+    margin-top: 40px;
+}
+#totalAmountperPerson:before{
+    content: "Total per Person ";
+    font-size: 14px;
+    font-weight: bold;
+    display: block;    
+    text-transform: uppercase;
+}
+#totalAmountperPerson sup{
+    font-size: 24px;
+    top:-18px;
+/*    SUP DOESNT REQUIRE POSITOON*/
+}
+#totalAmountperPerson small{
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+}

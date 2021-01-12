@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tip calulator</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="tipCalculatorstyles.css">	
+		<!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	</head>
+<body>
+	<div id="container">
+		<h1>Tip Calculator</h>
+			<div id="calculator">
+				<form>
+					<label>Bill Amount to be paid!<br/> $ <input type="number" id="billAmount" min="10" max="10,000"></label>
+                
+                    <label> How was your service? <br/>
+                		<select id="serviceQuality">
+                    		<option value="0" selected disabled>Tip%(Choose an option)</option>
+                    		<option value="0.3">30%</option>
+                    		<option value="0.2">20%</option>
+                    		<option value="0.15">15%</option>
+                    		<option value="0.1">10%</option>
+                    		<option value="0.05">5%</option>
+                		</select>
+                	</label>
+                	<label>How many people are sharing the bill?<br/>
+                   		<input type="text" id="totalPeople"> People
+                   </label>
+                                  
+                   <button type="button" id="calculate">Calculate!
+                   </button>
+               </form>
+            </div>
+
+            
+            <div id="totalTip">
+                    <sup>$</sup><span id="tip">0.00</span>
+                    <small id="each">each</small>
+            </div>
+            
+            <div id="totalAmountperPerson">
+                    <sup>$</sup><span id="Amount">0.00</span>
+                    <small id="each">each</small>
+            </div>
+            
+            
+      </div>
+      <script type="text/javascript" src="tipCalculatorscript.js"></script>
+    </body>
+</html>
