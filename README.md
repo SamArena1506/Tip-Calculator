@@ -3,8 +3,10 @@ Tip Calculator is a web-based app that is used in order to determine the share o
 
 Apart from that, the whole logic and math implementation is done using Javascript, with frontend development through HTML,CSS.
 
-The logic for understanding of how the Amount is sorted whereas how the Tip is calculated is listed below for refernce :
+The logic for understanding of how the Amount is sorted whereas how the Tip is calculated is listed below for reference :
       
       //logic
         tip_per_person = (billAmount * serviceQuality) / number_of_people ;
         Amount_per_person = (billAmount / number_of_people) + tip_per_person ;
+
+Site hotsed through github-webpages --> https://samarena1506.github.io/Tip-Calculator/ (also mentioned in the About section ;) )
